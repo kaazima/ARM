@@ -1,0 +1,17 @@
+1) mov R0, R1, ROR #3
+This will rotate value in R1, 3 places right and put result in R0.
+
+2) mov R0, R1, ROR R2
+This will rotate value in R1, R2 places right and put result in R0.
+
+3) mov R0, R1, RRX
+This will rotate value in R1 by one place right, bit 31 is filled with the value of carry flag, the bit 0 is moved into carry flag and finally result is stored in R0.
+
+4) ROR R0, R1, #3
+(Same as 1)
+
+5) ROR R0, R1, R2
+(Same as 2)
+
+6) RRX R0, R1
+(Same as 3)
